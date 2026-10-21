@@ -26,23 +26,3 @@ jwt:
 token:
   cleanup:
     interval-ms: 60000
-
-bucket4j:
-  enabled: true
-  filters:
-    - filter-name: authRateLimitFilter
-      url: /auth/*
-      rate-limits:
-        - bandwidths:
-            - capacity: 8
-              refill: greedy
-              refill-tokens: 8
-              refill-period: 5m
-    - filter-name: registerRateLimitFilter
-      url: /auth/register
-      rate-limits:
-        - bandwidths:
-            - capacity: 5
-              refill: greedy
-              refill-tokens: 5
-              refill-period: 5m
