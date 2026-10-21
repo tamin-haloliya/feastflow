@@ -14,4 +14,11 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
-   
+
+jwt:
+  private-key: ${JWT_PRIVATE_KEY:}
+  public-key: ${JWT_PUBLIC_KEY:}
+
+token:
+  cleanup:
+    interval-ms: 60000
