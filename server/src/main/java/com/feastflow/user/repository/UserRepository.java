@@ -1,6 +1,6 @@
-package com.feastflow.auth.repository;
+package com.feastflow.user.repository;
 
-import com.feastflow.auth.entity.UserEntity;
+import com.feastflow.user.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

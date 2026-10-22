@@ -1,4 +1,4 @@
-package com.feastflow.auth.entity;
+package com.feastflow.user.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -17,7 +17,7 @@ import java.util.UUID;
         indexes = @Index(name = "idx_users_email", columnList = "email", unique = true)
 )
 @Getter
-@Setter 
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

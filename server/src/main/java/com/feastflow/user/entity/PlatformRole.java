@@ -1,4 +1,4 @@
-package com.feastflow.auth.entity;
+package com.feastflow.user.entity;
 
 public enum PlatformRole {
     USER,
